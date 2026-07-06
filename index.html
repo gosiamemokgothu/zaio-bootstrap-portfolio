@@ -53,7 +53,7 @@
     <div class="banner-wrap vh-100 vw-100 text-white">
       <div class="overlay"></div>
 
-      <header class="px-5 p-3 text-white fixed-top scrolling">
+      <header class="px-5 p-3 text-white fixed">
         <div>
           <h3 class="float-md-start text-center">Portfolio</h3>
 
@@ -164,7 +164,7 @@
       <div class="col-md-4 mt-3">
         <div class="card">
           <img
-            src="https://zaiocontent.s3.eu-west-2.amazonaws.com/images+of+courses/css_netflix.png"
+           src="./assets/netflix.png" 
             class="card-img-top"
             alt="Netflix Landing Page"
           />
@@ -196,7 +196,7 @@
       <div class="col-md-4 mt-3">
         <div class="card">
           <img
-            src="https://zaiocontent.s3.eu-west-2.amazonaws.com/images+of+courses/css_netflix.png"
+            src="./assets/tesla.png"
             class="card-img-top"
             alt="Tesla Landing Page"
           />
@@ -224,7 +224,7 @@
       <div class="col-md-4 mt-3">
         <div class="card">
           <img
-            src="https://zaiocontent.s3.eu-west-2.amazonaws.com/images+of+courses/css_netflix.png"
+            src="./assets/youtube.png"
             class="card-img-top"
             alt="YouTube Homepage Clone"
           />
@@ -321,6 +321,7 @@
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
 <script>
 var typed = new Typed("#typed", {
   strings: [
@@ -332,6 +333,18 @@ var typed = new Typed("#typed", {
   backSpeed: 40,
   backDelay: 1500,
   loop: true
+});
+</script>
+
+<script>
+window.addEventListener("scroll", function () {
+  const header = document.querySelector("header");
+
+  if (window.scrollY > 50) {
+    header.classList.add("scrolling");
+  } else {
+    header.classList.remove("scrolling");
+  }
 });
 </script>
 
