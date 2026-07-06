@@ -70,11 +70,8 @@
         class="d-flex flex-column align-items-center justify-content-center h-75 text-center"
       >
         <h1 class="display-1">I am Gosiame Mokgothu</h1>
-
-        <p class="lead">
-          Aspiring AI Engineer | Full Stack Web Developer | Education Innovator
-        </p>
-      </main>
+        <span class="lead" id="typed"></span>
+        
     </div>
 
     <section id="about-me">
@@ -97,11 +94,7 @@
                   <div class="col-md-7 mt-3">
                     <p><strong>Name:</strong> Gosiame Mokgothu</p>
 
-                    <p>
-                      <strong>Profile:</strong>
-                      Aspiring AI Engineer & Full Stack Web Developer
-                    </p>
-
+                  
                     <p>
                       <strong>Email:</strong>
                       gosiamemokgothu304@gmail.com
@@ -326,5 +319,21 @@
     © 2026 Gosiame Mokgothu. All Rights Reserved.
   </p>
 </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+var typed = new Typed("#typed", {
+  strings: [
+    "Aspiring AI Engineer",
+    "Full Stack Web Developer",
+    "Education Innovator"
+  ],
+  typeSpeed: 60,
+  backSpeed: 40,
+  backDelay: 1500,
+  loop: true
+});
+</script>
+
 </body>
 </html>
