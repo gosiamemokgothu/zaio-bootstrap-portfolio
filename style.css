@@ -61,3 +61,19 @@ html {
     color: #fff;
     border-bottom-color: #fff;
 }
+
+.visually-hidden-focusable {
+    position: absolute;
+    left: -9999px;
+    top: 10px;
+    background: #ffffff;
+    color: #000000;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    z-index: 9999;
+}
+
+.visually-hidden-focusable:focus {
+    left: 10px;
+}
