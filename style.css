@@ -72,8 +72,6 @@ html {
     border-radius: 5px;
     text-decoration: none;
     z-index: 9999;
-}
-
 .visually-hidden-focusable:focus {
     left: 10px;
 }
